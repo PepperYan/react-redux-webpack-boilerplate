@@ -1,0 +1,26 @@
+{
+  "name": "canteen-mobile-web",
+  "description": "canteen-mobile-web",
+  "main": "server.js",
+  "authors": [
+    "hibad"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "canteen"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "AdminLTE": "admin-lte#^2.3.2",
+    "velocity": "^1.2.3"
+  }
+}
