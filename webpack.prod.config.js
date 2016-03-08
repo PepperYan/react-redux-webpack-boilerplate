@@ -1,3 +1,4 @@
+var path = require('path')
 var webpack = require("webpack");
 var config = require('./webpack.config');
 var _ = require('lodash');
@@ -8,7 +9,9 @@ config = _.omit(config, 'devtool');
 config.entry.app =[
   './static/index.jsx'
 ];
+
 config.devtool = "source-map";
+config.output.path = './static-dist'
 
 config.plugins.push(new webpack.optimize.UglifyJsPlugin());
 

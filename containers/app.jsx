@@ -4,7 +4,6 @@ import DevTools from '../containers/DevTools'
 import _ from 'lodash'
 var HeaderBar = require('../components/ui/framework/header-bar/header-bar');
 var NavBar = require('../components/ui/framework/header-bar/header-navbar');
-var Box = require('../components/ui/alte/components/page-widgets/box');
 import SiderBar from '../components/ui/framework/sider-bar'
 
 

@@ -1,7 +1,7 @@
 var path = require('path')
 var webpack = require('webpack');
 var path_node_modules = path.resolve(__dirname, 'node_modules');
-
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   devtool: "source-map",
@@ -18,7 +18,7 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, "/static-dist"),
+    path: path.resolve(__dirname, '/static-dist'),
     publicPath: "/",
     filename: '[name].js'
   },
@@ -51,6 +51,12 @@ module.exports = {
       $: "jquery",
       jQuery: "jquery",
       "window.jQuery": "jquery"
-    })
+    }),
+    new HtmlWebpackPlugin({
+        title: 'index',
+        cdn:"/static/css",
+        showErrors:false,
+        template: './static/template.html'
+    }),
   ]
 }
