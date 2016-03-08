@@ -1,9 +1,8 @@
 define(
     [
         'react',
-        'jquery',
     ],
-    function (React, $, HeaderMessages, HeaderNotifications, HeaderTasks) {
+    function (React, HeaderMessages, HeaderNotifications, HeaderTasks) {
         var HeaderBar = React.createClass({
             getInitialState: function () {
                 return {

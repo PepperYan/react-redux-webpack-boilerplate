@@ -13,7 +13,7 @@ module.exports = {
     ],
     vendors: ['react', 'react-dom', 'react-router', 'history',
       'react-addons-linked-state-mixin', 'react-addons-pure-render-mixin',
-      'jquery', 'lodash', 'react-redux', 'redux', 'redux-simple-router',
+      'lodash', 'react-redux', 'redux', 'redux-simple-router',
       'redux-thunk', 'redux-undo','aja'
     ]
   },
