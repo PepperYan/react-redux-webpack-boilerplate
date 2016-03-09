@@ -38,24 +38,17 @@ module.exports = {
   },
   resolve: {
     modulesDirectories: ['node_modules', 'bower_components'],
-    extensions: ['', '.js', '.jsx'],
-    alias: [{
-      reactDom: 'react-dom'
-    }]
+    extensions: ['', '.js', '.jsx']
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.optimize.CommonsChunkPlugin('vendors', 'vendors.js'),
     new webpack.NoErrorsPlugin(),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery"
-    }),
     new HtmlWebpackPlugin({
         title: 'index',
         cdn:"/static/css",
         showErrors:false,
+        hash:true, //prevent cache
         template: './static/template.html'
     }),
   ]
