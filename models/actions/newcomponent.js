@@ -10,7 +10,7 @@ export function fetchList(){
     //   method:"post",
     //   body:data
     // }, function(response){
-    //   console.log(response)
+    //   dispatch(list(data))
     // });
 
     dispatch(list(data))
