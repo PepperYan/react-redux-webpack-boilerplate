@@ -1,15 +1,17 @@
 {
-  "name": "canteen-mobile-web",
+  "name": "react-redux-webpack-boilerplate",
   "version": "0.0.1",
   "description": "canteen-mobile-web",
   "main": "server.js",
   "scripts": {
     "test": "tests",
-    "start": "node --debug server.js",
+    "start": "node server.js",
+    "debug": "node --debug server.js",
+    "prod": "NODE_ENV=production node production.js",
     "build": "sudo webpack --progress --profile --config webpack.prod.config.js"
   },
   "keywords": [
-    "cleanreduxdemo"
+    "react-redux-webpack-boilerplate"
   ],
   "author": "hibad",
   "license": "MIT",
