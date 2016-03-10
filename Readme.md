@@ -13,6 +13,9 @@
 然后到项目根目录输入npm run build. 即可在static-dist目录获得bundle
 
 npm start 运行node
+
 npm run build 打包到statid-dist
+
 npm run debug 打开debug模式
+
 npm run prod 运行生产模式
