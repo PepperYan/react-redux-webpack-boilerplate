@@ -1,7 +1,7 @@
 {
   "name": "react-redux-webpack-boilerplate",
   "version": "0.0.1",
-  "description": "canteen-mobile-web",
+  "description": "react-redux-webpack-boilerplate from hibad",
   "main": "server.js",
   "scripts": {
     "test": "tests",
