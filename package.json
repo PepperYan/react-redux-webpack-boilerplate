@@ -34,8 +34,7 @@
     "react-swipe": "^3.0.0",
     "redux": "^3.3.1",
     "redux-thunk": "^0.1.0",
-    "redux-undo": "^0.6.0",
-    "swipe-js-iso": "^2.0.1"
+    "redux-undo": "^0.6.0"
   },
   "devDependencies": {
     "ansi-to-html-umd": "^0.4.2",

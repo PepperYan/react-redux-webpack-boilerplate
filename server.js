@@ -24,7 +24,7 @@ app.use('/static', express.static(path.join(__dirname, 'static')));
 app.use('/dist', express.static(path.join(__dirname, 'static/css/alte')));
 // app.use('/carts',express.static(path.join(__dirname,'static/index.html')));
 
-app.get("*", function(req, res) {
+app.get("/", function(req, res) {
   res.sendFile(__dirname + '/static/index.html')
 })
 
