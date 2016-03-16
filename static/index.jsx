@@ -4,7 +4,7 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 //react-router & redux
 import { Router} from 'react-router'
-import { syncReduxAndRouter } from 'redux-simple-router'
+import { syncHistoryWithStore } from 'react-router-redux'
 import configureStore from '../models/store/configureStore'
 import routes from './routes'
 import history from './history'
@@ -12,7 +12,7 @@ import history from './history'
 //加载自定义Store
 const store = configureStore()
 
-syncReduxAndRouter(history, store)
+syncHistoryWithStore(history, store)
 
 const container = document.getElementById('container');
 render(
