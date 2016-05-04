@@ -11,10 +11,10 @@ module.exports = {
       'webpack/hot/only-dev-server',
       './static/index.jsx'
     ],
-    vendors: ['react', 'react-dom', 'react-router', 'history',
+    vendors: ['babel-polyfill','react', 'react-dom', 'react-router', 'history',
       'react-addons-linked-state-mixin', 'react-addons-pure-render-mixin',
-      'lodash', 'react-redux', 'redux', 'redux-simple-router',
-      'redux-thunk', 'redux-undo','aja'
+      'lodash', 'react-redux', 'redux', 'react-router-redux',
+      'redux-thunk', 'redux-undo'
     ]
   },
   output: {
